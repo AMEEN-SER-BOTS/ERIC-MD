@@ -102,7 +102,7 @@ async function starteric() {
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         if (mek.key.id.startsWith('FatihArridho_')) return
         m = smsg(eric, mek, store)
-        require("./eric")(eric, m, chatUpdate, store)
+        require("./eric.js")(eric, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
